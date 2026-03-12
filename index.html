@@ -2,28 +2,41 @@
 <html>
 
 <head>
+
 <title>我的马尔代夫之旅</title>
 
 <style>
 
 body{
+margin:0;
 font-family:Arial;
-text-align:center;
 background:#e6f7ff;
+text-align:center;
+}
+
+header{
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/6/6e/Maldives_Island.jpg");
+background-size:cover;
+color:white;
+padding:120px 20px;
 }
 
 h1{
-color:#0088cc;
+font-size:50px;
+}
+
+.section{
+padding:40px;
 }
 
 img{
-width:600px;
-border-radius:15px;
-margin:20px;
+width:300px;
+margin:15px;
+border-radius:10px;
 }
 
 button{
-padding:10px 20px;
+padding:12px 25px;
 font-size:18px;
 background:#00aaff;
 color:white;
@@ -33,13 +46,7 @@ cursor:pointer;
 }
 
 button:hover{
-background:#0077aa;
-}
-
-#text{
-font-size:20px;
-color:#333;
-margin-top:20px;
+background:#0088cc;
 }
 
 </style>
@@ -48,24 +55,36 @@ margin-top:20px;
 
 <body>
 
+<header>
+
 <h1>我的马尔代夫旅行</h1>
 
-<p>这是我梦想中的海岛天堂</p >
+<p>世界上最美的海岛天堂</p >
+
+<button onclick="show()">查看旅行感想</button>
+
+<p id="text"></p >
+
+</header>
+
+<div class="section">
+
+<h2>美丽的海岛</h2>
 
 < img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Maldives_Island.jpg">
 
-<br>
+< img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Maldives_Resort.jpg">
 
-<button onclick="show()">点击查看感想</button>
+< img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Maldives_beach.jpg">
 
-<p id="text"></p >
+</div>
 
 <script>
 
 function show(){
 
 document.getElementById("text").innerText =
-"当我看到这片海的时候，我觉得世界突然变得很安静。";
+"当我站在这片海边的时候，我觉得世界突然安静了。";
 
 }
 
