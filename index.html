@@ -49,6 +49,24 @@ button:hover{
 background:#0088cc;
 }
 
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.3s;
+}
+  
+.gallery img:hover{
+transform:scale(1.1);
+}
+  
 </style>
 
 </head>
@@ -68,14 +86,16 @@ background:#0088cc;
 </header>
 
 <div class="section">
-
+  
 <h2>美丽的海岛</h2>
-
+  
+<div class="gallery">
+    
 <img src="island.jpg">
-
 <img src="sea.jpg">
-
 <img src="beach.jpg">
+  
+</div>
 
 </div>
 
@@ -93,5 +113,6 @@ document.getElementById("text").innerText =
 </body>
 
 </html>
+
 
 
